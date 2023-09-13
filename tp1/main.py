@@ -13,4 +13,4 @@ count_word()
 
 #ma fonction compte le nombre de mots
 #ma fonction input un string
-#ma fonction output un nomre
+#ma fonction output un nombre
