@@ -10,3 +10,7 @@ def count_word():
 
 
 count_word()
+
+#ma fonction compte le nombre de mots
+#ma fonction input un string
+#ma fonction output un nomre
