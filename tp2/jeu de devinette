@@ -1,0 +1,33 @@
+import random
+
+x = random.randint(0, 100)
+
+
+def jeudedevinette():
+    nb_essai = 0
+    essai = None
+    print("j'ai choisi un nombre entre 0 et 100. À vous de deviner...")
+    while essai != x:
+        essai=int(input("Quelle est votre essai: "))
+        nb_essai = nb_essai +1
+        if essai > x:
+            print("lower")
+            jeudedevinette()
+
+        if essai < x:
+
+            print("higher")
+            jeudedevinette()
+
+    if essai == x:
+                print("good job")
+        quit = input("do you want to leave: y/n/n")
+        if quit == "y" :
+            print("bye")
+        if quit == "n":
+            jeudedevinette()
+
+
+
+
+jeudedevinette()
