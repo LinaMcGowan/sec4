@@ -1,0 +1,20 @@
+import random
+
+
+
+
+class NPC:
+
+    def __init__(self):
+        self.force = self.nombre_alléatoire()
+        self.agilité = self.nombre_alléatoire()
+        self.construction = self.nombre_alléatoire()
+        self.intelligence = self.nombre_alléatoire()
+        self.sagesse = self.nombre_alléatoire()
+        self.charisme = self.nombre_alléatoire()
+
+    def nombre_alléatoire(self):
+        dé1 = random.randint(1, 6)
+        dé2 = random.randint(1, 6)
+        dé3 = random.randint(1, 6)
+        dé4 = random.randint(1, 6)
